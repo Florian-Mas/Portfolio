@@ -1,0 +1,379 @@
+.loading_screen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+body{
+    background-color: black;
+
+}
+
+.mouse_on_button{
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.loading_button{
+    background-color: #FFFFFF;
+    border: 2px solid #8A7070;
+    box-shadow:#8A7070 1px 5px 16px;
+    margin:auto;
+    font-size:30px;
+
+}
+
+.loading_button:hover {
+    background-color: #8A7070;
+    border: 2px solid #8A7070;
+    box-shadow:#8A7070 1px 1px 16px;
+    margin:auto;
+
+}
+
+.main_menu{
+    display:none;
+    flex-direction: column;
+     
+}
+
+
+.main_menu_button{
+    border-radius: 15px;
+    display: block;
+    font-size:20px;
+    background-color: #FFFFFF;
+    border: 2px solid #8A7070;
+    box-shadow:#8A7070 1px 5px 16px;
+    transition-duration: 1s;
+}
+
+.main_menu_button:hover{
+    border-radius: 15px;
+    display: block;
+    font-size:20px;
+    background-color: #8A7070;
+    border: 2px solid #8A7070;
+    box-shadow:#8A7070 1px 1px 16px;
+}
+
+#Profil{
+    margin:10vh auto 0;
+}
+
+#Projet{
+    margin:15vh auto 0;
+}
+
+#Formation{
+    margin:15vh auto 0;
+}
+
+#Expériences{
+    margin:15vh auto 0;
+}
+
+#Activité{
+    margin:15vh auto 0;
+}
+
+
+.little_box{
+    display: none;
+    position: absolute;
+    border: 3px solid red;
+    width: 50vw;
+    height: 80vh;
+    top : 10vh;
+    left:35vw;
+    background-color: #551C55;
+    color: white;
+    
+    
+}
+
+#Name{
+    display:flex;
+    justify-content: center;
+    font-size:24px
+}
+
+#Recherche{
+    display:flex;
+    justify-content: center;
+    font-size:10px;
+    text-align:justify;
+    margin:2px;
+}
+#Compétence{
+    position: relative;
+    border-right:1px solid;
+}
+#Langue{
+    position: relative;
+    border-right:1px solid;
+}
+#Programmation{
+    position: relative;
+}
+
+#Profil_pic{
+    display: flex;
+    max-width: 120px;
+    width:20vw;
+    height:auto;
+    margin:auto;
+    border-radius:50%;
+}
+
+.CP_LG_PG{
+    display: flex;
+    gap:4%;
+    font-size:11px;
+    border:1px solid;
+}
+
+.titre{
+    border-bottom:1px solid;
+    text-align:center;
+    text-shadow: 3px 3px 9px red;
+}
+#Contact{
+    text-align:center;
+    font-size:14px
+}
+
+.text_to_justify{
+    text-align:justify;
+    font-size: 10px;
+
+}
+
+a{
+    color: #FF0000;
+    text-shadow: 2px 2px 30px pink;
+}
+
+#little_box_Projet{
+
+    font-size: 25px;
+}
+
+#Form_contact{
+    display: none;
+    position: absolute;
+    background-color: #551C55;
+    border: 5px solid red;
+    top:25vh;
+    height:50vh;
+    width:50vw;
+}
+#Contact_form_button{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    border-radius:10px;
+}
+#Lien_Mail{
+    position:absolute;
+    left:0px;
+    top:30vh;
+}
+#envoie{
+    position:absolute;
+    left:0px;
+    top:23vh;
+    padding:7px 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .loading_button{
+        font-size: 30px;
+    }
+    .main_menu_button{
+        font-size: 20px;
+    }
+    .main_menu_button:hover{
+        font-size: 20px;
+    }
+    #Name{
+        font-size:24px
+    }
+
+    #Recherche{
+        font-size:10px;
+    }
+    .CP_LG_PG{
+        font-size:11px;
+    }
+    #Contact{
+        font-size:14px
+    }
+
+    .text_to_justify{
+        font-size: 10px;
+    }
+    #little_box_Projet{
+        font-size: 25px;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    .loading_button{
+        font-size: 50px;
+    }
+    .main_menu_button{
+        font-size: 30px;
+    }
+    .main_menu_button:hover{
+        font-size: 25px;
+    }
+    #Name{
+        font-size:35px
+    }
+
+    #Recherche{
+        font-size:20px;
+    }
+    .CP_LG_PG{
+        font-size:15px;
+    }
+    #Contact{
+        font-size:20px
+    }
+
+    .text_to_justify{
+        font-size: 30px;
+        text-align:left;
+    }
+    #little_box_Projet{
+        font-size: 25px;
+    }
+    #Contact_form_button{
+        font-size:20px
+    }
+    #Form_contact{
+        font-size:25px
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .loading_button{
+        font-size: 70px;
+    }
+    .main_menu_button{
+        font-size: 50px;
+    }
+    .main_menu_button:hover{
+        font-size: 45px;
+    }
+    #Name{
+        font-size:45px
+    }
+
+    #Recherche{
+        font-size:30px;
+    }
+    .CP_LG_PG{
+        font-size:21px;
+    }
+    #Contact{
+        font-size:25px
+    }
+
+    .text_to_justify{
+        font-size: 30px;
+        text-align:left;
+    }
+    #little_box_Projet{
+        font-size: 50px;
+    }
+    #Contact_form_button{
+        font-size:30px
+    }
+    #Form_contact{
+        font-size:35px
+    }
+    input{
+        font-size:25px;
+    }
+    #Lien_Mail{
+        top:30vh;
+    }
+    .titre{
+        font-size:30px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .loading_button{
+        font-size: 80px;
+    }
+    .main_menu_button{
+        font-size: 27px;
+    }
+    .main_menu_button:hover{
+        font-size: 22px;
+    }
+    #Name{
+        font-size:35px
+    }
+
+    #Recherche{
+        font-size:20px;
+    }
+    .CP_LG_PG{
+        font-size:15px;
+    }
+    #Contact{
+        font-size:30px
+    }
+
+    .text_to_justify{
+        font-size: 25px;
+        text-align:left;
+    }
+    #little_box_Projet{
+        font-size: 50px;
+    }
+    #Contact_form_button{
+        font-size:30px
+    }
+    #Form_contact{
+        font-size:36px;
+        top:20vh;
+    }
+    input{
+        font-size:30px;
+    }
+    #Lien_Mail{
+        top:40vh;
+    }
+    .titre{
+        font-size:25px;
+    }
+    .little_box{
+        width:75vw;
+        left:20vw
+    }
+    #Profil_pic{
+        position:absolute;
+        top:0px;
+        left:9vw;
+        max-width:110px;
+    }
+    #envoie{
+
+        position:absolute;
+        right:0px;
+        left:auto;
+        top:210px;
+        
+    }
+}
