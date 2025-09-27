@@ -58,23 +58,23 @@ body{
     box-shadow:#8A7070 1px 1px 16px;
 }
 
-#Profil{
+#Profile{
     margin:10vh auto 0;
 }
 
-#Projet{
+#Project{
     margin:15vh auto 0;
 }
 
-#Formation{
+#Education{
     margin:15vh auto 0;
 }
 
-#Expériences{
+#Work_experience{
     margin:15vh auto 0;
 }
 
-#Activité{
+#Activity{
     margin:15vh auto 0;
 }
 
@@ -99,26 +99,26 @@ body{
     font-size:24px
 }
 
-#Recherche{
+#Search{
     display:flex;
     justify-content: center;
     font-size:10px;
     text-align:justify;
     margin:2px;
 }
-#Compétence{
+#Skill{
     position: relative;
     border-right:1px solid;
 }
-#Langue{
+#Language{
     position: relative;
     border-right:1px solid;
 }
-#Programmation{
+#programming{
     position: relative;
 }
 
-#Profil_pic{
+#Profile_pic{
     display: flex;
     max-width: 120px;
     width:20vw;
@@ -129,12 +129,11 @@ body{
 
 .CP_LG_PG{
     display: flex;
-    gap:4%;
     font-size:11px;
     border:1px solid;
 }
 
-.titre{
+.title{
     border-bottom:1px solid;
     text-align:center;
     text-shadow: 3px 3px 9px red;
@@ -151,11 +150,11 @@ body{
 }
 
 a{
-    color: #FF0000;
-    text-shadow: 2px 2px 30px pink;
+    color: pink;
+    text-shadow: 2px 2px 30px #FF0000;
 }
 
-#little_box_Projet{
+#little_box_Project{
 
     font-size: 25px;
 }
@@ -175,12 +174,12 @@ a{
     left:0px;
     border-radius:10px;
 }
-#Lien_Mail{
+#Email_link{
     position:absolute;
     left:0px;
     top:30vh;
 }
-#envoie{
+#send{
     position:absolute;
     left:0px;
     top:23vh;
@@ -202,7 +201,7 @@ a{
         font-size:24px
     }
 
-    #Recherche{
+    #Search{
         font-size:10px;
     }
     .CP_LG_PG{
@@ -215,7 +214,7 @@ a{
     .text_to_justify{
         font-size: 10px;
     }
-    #little_box_Projet{
+    #little_box_Project{
         font-size: 25px;
     }
 
@@ -236,7 +235,7 @@ a{
         font-size:35px
     }
 
-    #Recherche{
+    #Search{
         font-size:20px;
     }
     .CP_LG_PG{
@@ -250,7 +249,7 @@ a{
         font-size: 30px;
         text-align:left;
     }
-    #little_box_Projet{
+    #little_box_Project{
         font-size: 25px;
     }
     #Contact_form_button{
@@ -276,7 +275,7 @@ a{
         font-size:45px
     }
 
-    #Recherche{
+    #Search{
         font-size:30px;
     }
     .CP_LG_PG{
@@ -290,7 +289,7 @@ a{
         font-size: 30px;
         text-align:left;
     }
-    #little_box_Projet{
+    #little_box_Project{
         font-size: 50px;
     }
     #Contact_form_button{
@@ -302,10 +301,10 @@ a{
     input{
         font-size:25px;
     }
-    #Lien_Mail{
+    #Email_link{
         top:30vh;
     }
-    .titre{
+    .title{
         font-size:30px;
     }
 
@@ -325,7 +324,7 @@ a{
         font-size:35px
     }
 
-    #Recherche{
+    #Search{
         font-size:20px;
     }
     .CP_LG_PG{
@@ -339,7 +338,7 @@ a{
         font-size: 25px;
         text-align:left;
     }
-    #little_box_Projet{
+    #little_box_Project{
         font-size: 50px;
     }
     #Contact_form_button{
@@ -352,23 +351,23 @@ a{
     input{
         font-size:30px;
     }
-    #Lien_Mail{
+    #Email_link{
         top:40vh;
     }
-    .titre{
+    .title{
         font-size:25px;
     }
     .little_box{
         width:75vw;
         left:20vw
     }
-    #Profil_pic{
+    #Profile_pic{
         position:absolute;
         top:0px;
         left:9vw;
         max-width:110px;
     }
-    #envoie{
+    #send{
 
         position:absolute;
         right:0px;

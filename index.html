@@ -13,37 +13,37 @@
     </div>
     <div class="main_menu" id="Main_menu">
         <div>
-            <button id="Profil" class="main_menu_button" onclick="Button_Profil()">Profil</button>
+            <button id="Profile" class="main_menu_button" onclick="Button_Profile()">Profil</button>
         </div>
         <div>
-            <button id="Projet" class="main_menu_button" onclick="Button_Projets()">Projets</button>
+            <button id="Project" class="main_menu_button" onclick="Button_Project()">Projets</button>
         </div>
         <div>
-            <button id="Formation" class="main_menu_button"onclick="Button_Formation()">Formation</button>
+            <button id="Education" class="main_menu_button"onclick="Button_Education()">Formation</button>
         </div>
         <div>
-            <button id="Expériences" class="main_menu_button"onclick="Button_Expériences()">Expériences</button>
+            <button id="Work_experience" class="main_menu_button"onclick="Button_Work_experience()">Expériences</button>
         </div>
         <div>
-            <button id="Activité" class="main_menu_button"onclick="Button_Activité()">Activité</button>
+            <button id="Activity" class="main_menu_button"onclick="Button_Activity()">Activités</button>
         </div>
         
     </div>
-    <div class="little_box" id="little_box_Profil">
+    <div class="little_box" id="little_box_Profile">
         <div id="Name">
             <p>MASSART Florian</p>
         </div>
         
         <div>
-            <img  id="Profil_pic" src="mod PXL_20250913_080115428.MP.jpg">
+            <img  id="Profile_pic" src="mod PXL_20250913_080115428.MP.jpg">
         </div>
         
-        <div id="Recherche">
+        <div id="Search">
             <p>Etudiant en 3ème année au sein d'Epitech Marseille, je recherche une alternance en informatique d'une durée de 33 mois à partir de janvier 2026.</p>
         </div>
         <div class="CP_LG_PG">
-            <div id="Compétence">
-                <p class="titre">Compétence</p>
+            <div id="Skill">
+                <p class="title">Compétences</p>
                 <p> ✔ Adaptabilité<br>
                     ✔ Persévérance <br>
                     ✔ Solidarité<br>
@@ -53,15 +53,15 @@
                     ✔ Gestion du stress <br>
                 </p>
             </div>
-            <div id="Langue">
-                <p class="titre">Langue</p>
+            <div id="Language">
+                <p class="title">Langues</p>
                 <p> Anglais (B2)<br>
                     <br>
                     Italien (A2)
                 </p>
             </div>
-            <div id="Programmation">
-                <p class="titre">Outils</p>
+            <div id="programming">
+                <p class="title">Outils</p>
                 <p>Maîtrise des logiciels bureautiques</p>
                 <p>Scratch, MIT App Inventor 2</p>
                 <p>initiation C#</p>
@@ -69,30 +69,30 @@
             </div>
         </div>
         <div id="Contact">
-            <p class="titre">Contact</p>
+            <p class="title">Contact</p>
             <a href="mailto:fmassart2002@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/florian-massart-b886b3377/">Linkedin</a>
             <button id="Contact_form_button" onclick="Button_Contact_Form()">Contact form et Email</button>
         </div>
         <div id="Form_contact">
             <form>
-                <label for="qui">Qui êtes vous:</label><br>
-                <input type="text" id="qui" name="qui"><br>
-                <label for="question">Quel question voulez vous me poser:</label><br>
+                <label for="who">Qui êtes vous :</label><br>
+                <input type="text" id="who" name="who"><br>
+                <label for="question">Quelle question voulez vous me poser :</label><br>
                 <input type="text" id="question" name="question"><br>
-                <label for="retour">Comment vous recontacter:</label><br>
-                <input type="text" id="retour" name="retour"><br>
-                <input type="submit" value="Envoyer" id="envoie" onclick="azerty()"><br>
+                <label for="come_back">Comment vous recontacter :</label><br>
+                <input type="text" id="come_back" name="come_back"><br>
+                <input type="submit" value="Envoyer" id="send" onclick="Send_Contact_Form()"><br>
             </form>
             <div >
-                <a href="mailto:fmassart2002@gmail.com" id="Lien_Mail">M'envoyer directement un Email</a>
+                <a href="mailto:fmassart2002@gmail.com" id="Email_link">M'envoyer directement un Email</a>
             </div>
         </div>
 
     </div>
 
     </div>
-    <div class="little_box" id="little_box_Projet">
+    <div class="little_box" id="little_box_Project">
         <div>
             <p></p>
             <a href="https://github.com/Florian-Mas/Hangman.git">Hangman</a>
@@ -100,13 +100,13 @@
         </div>
         <div>
             <p></p>
-            <a href="https://github.com/Florian-Mas/ebauche-jeu-3D.git">ebauche-jeu-3D</a>
+            <a href="https://github.com/Florian-Mas/ebauche-jeu-3D.git">Ebauche-jeu-3D</a>
             <p></p>
         </div>
     </div>
-    <div class="little_box" id="little_box_Formation">
+    <div class="little_box" id="little_box_Education">
         <div>
-            <p class="titre"> Epitech Marseille</p>
+            <p class="title"> Epitech Marseille</p>
             <p class="text_to_justify"> Pré-Master of Science - Master of Science Tech, Numérique & Innovation</p>
             <p class="text_to_justify"> • Bases en algorithmie <br>
                 • Bases en administration système et réseaux <br>
@@ -115,43 +115,43 @@
                 • Projets découvertes : DevOps et Cybersécurité</p>
         </div>
         <div>
-            <p class="titre">Université Aix Marseille</p>
+            <p class="title">Université Aix Marseille</p>
             <p class="text_to_justify">Licence de droit obtenue - Option droit privé</p>
         </div>
         <div>
-            <p class="titre">Lycée Mélizan - Marseille</p>
+            <p class="title">Lycée Mélizan - Marseille</p>
             <p class="text_to_justify">Bac S - Reçu avec mention</p>
         </div>
     </div>
-    <div class="little_box" id="little_box_Expériences">
+    <div class="little_box" id="little_box_Work_experience">
         <div>
-            <p class="titre">Assistant d'éducation - Collège Le Ruissatel - Marseille</p>
+            <p class="title">Assistant d'éducation - Collège Le Ruissatel - Marseille</p>
             <p class="text_to_justify">Participation à la vie scolaire, veille au respect du règlement intérieur, collaboration à l'amélioration des conditions d'accueil du public.</p>
         </div>
         <div>
-            <p class="titre">Volontaire Service Civique - Pôle emploi - Marseille</p>
+            <p class="title">Volontaire Service Civique - Pôle Emploi - Marseille</p>
             <p class="text_to_justify">Accompagnement des usagers dans l'utilisation des outils numériques, facilitateur d'inclusion numérique.</p>
         </div>
         <div>
-            <p class="titre">Cours particuliers/soutien scolaire</p>
+            <p class="title">Cours particuliers/soutien scolaire</p>
             <p class="text_to_justify">Aide aux devoirs et cours de soutien. </p>
         </div>
     </div>
-    <div class="little_box" id="little_box_Activité">
+    <div class="little_box" id="little_box_Activity">
         <div>
-            <p class="titre">Judo</p>
+            <p class="title">Judo</p>
             <div class="text_to_justify">Ceinture Bleue  - Participation à des compétitions</div>
         </div>
         <div>
-            <p class="titre">Multi-sports</p>
+            <p class="title">Multi-sports</p>
             <p class="text_to_justify">Escalade, ski alpin, E-sport</p>
         </div>
         <div>
-            <p class="titre">Social network</p>
+            <p class="title">Social network</p>
             <p class="text_to_justify">Gestionnaire de communautés Amino</p>
         </div>
         <div>
-            <p class="titre">Passion</p>
+            <p class="title">Passion</p>
             <p class="text_to_justify">Jeux vidéo, Anime</p>
         </div>
     </div>

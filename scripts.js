@@ -1,5 +1,5 @@
 var bg_color_base_button = "#FFFFFF"
-var bg_color_selected_button = "#9C8787"
+var bg_color_selected_button = "#551C55"
 var bg_color_over_button = "#8A7070";
 
 var sb_color_base_button = "#8A7070 1px 5px 16px;";
@@ -15,340 +15,97 @@ function Button_Disapear_And_Load(button){
     document.getElementById("Body").style.backgroundImage = "url(Complet_fond_lissé_avec_effet.png)"
     
 }
-//
-function Button_Profil() {
-    
-    
-    document.getElementById("Profil").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Profil").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Profil").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Profil").style.display="inline";
+
+function Button_to_move_not_selected(ID,BoxID){
+    document.getElementById(ID).style.transform="translateX(-40vw)";
+    setTimeout(()=>{document.getElementById(ID).style.margin="10vh 0 0"},1000);
+    setTimeout(()=>{document.getElementById(ID).style.transform="translateX(0vw)"},1000);
+    document.getElementById(BoxID).style.display="none";
+    document.getElementById(ID).style.background = bg_color_base_button
+    document.getElementById(ID).addEventListener("mouseover",()=>{
+        document.getElementById(ID).style.background = bg_color_over_button;
+        document.getElementById(ID).style.boxShadow = sb_color_over_button;
+        });
+    document.getElementById(ID).addEventListener("mouseleave",()=>{
+        document.getElementById(ID).style.background = bg_color_base_button;
+        document.getElementById(ID).style.boxShadow = sb_color_base_button;
+        });
+    document.getElementById(ID).style.borderColor = "#8A7070";
+    document.getElementById(ID).style.color = "black";
+
+}
+
+function Button_to_move_selected(ID,BoxID){
+    document.getElementById(ID).style.transform="translateX(-40vw)";
+    setTimeout(()=>{document.getElementById(ID).style.margin="10vh 0 0"},1000);
+    setTimeout(()=>{document.getElementById(ID).style.transform="translateX(0vw)"},1000);
+    document.getElementById(BoxID).style.display="inline";
     document.getElementById("Form_contact").style.display = "none";
-    
+    document.getElementById(ID).style.background = bg_color_selected_button;
+    document.getElementById(ID).addEventListener("mouseover",()=>{document.getElementById(ID).style.background = bg_color_selected_button;});
+    document.getElementById(ID).addEventListener("mouseleave",()=>{document.getElementById(ID).style.background = bg_color_selected_button;})
+    document.getElementById(ID).style.borderColor = "pink";
+    document.getElementById(ID).style.color = bg_color_base_button;
 
-
-    document.getElementById("Projet").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Projet").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Projet").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Projet").style.display="none";
-    document.getElementById("Projet").addEventListener("mouseover",()=>{
-        document.getElementById("Projet").style.background = bg_color_over_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Projet").addEventListener("mouseleave",()=>{
-        document.getElementById("Projet").style.background = bg_color_base_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_base_button;
-        });
-    
-
-    document.getElementById("Formation").style.transform="translateX(-38vw)";
-    setTimeout(()=>{document.getElementById("Formation").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Formation").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Formation").style.display="none";
-    document.getElementById("Formation").addEventListener("mouseover",()=>{
-        document.getElementById("Formation").style.background = bg_color_over_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Formation").addEventListener("mouseleave",()=>{
-        document.getElementById("Formation").style.background = bg_color_base_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Expériences").style.transform="translateX(-35vw)";
-    setTimeout(()=>{document.getElementById("Expériences").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Expériences").style.transform="translateX(0vw)"},1000);    
-    document.getElementById("little_box_Expériences").style.display="none";
-    document.getElementById("Expériences").addEventListener("mouseover",()=>{
-        document.getElementById("Expériences").style.background = bg_color_over_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Expériences").addEventListener("mouseleave",()=>{
-        document.getElementById("Expériences").style.background = bg_color_base_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Activité").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Activité").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Activité").style.transform="translateX(0vw)"},1000); 
-    document.getElementById("little_box_Activité").style.display="none";
-    document.getElementById("Activité").addEventListener("mouseover",()=>{
-        document.getElementById("Activité").style.background = bg_color_over_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Activité").addEventListener("mouseleave",()=>{
-        document.getElementById("Activité").style.background = bg_color_base_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_base_button;
-        });
 }
-//
-function Button_Projets() {
-    document.getElementById("Profil").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Profil").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Profil").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Profil").style.display="none";
-    document.getElementById("Profil").addEventListener("mouseover",()=>{
-        document.getElementById("Profil").style.background = bg_color_over_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Profil").addEventListener("mouseleave",()=>{
-        document.getElementById("Profil").style.background = bg_color_base_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_base_button;
-        });
 
-    document.getElementById("Projet").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Projet").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Projet").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Projet").style.display="inline";
-
+function Button_Profile(){
     
-
-    document.getElementById("Formation").style.transform="translateX(-38vw)";
-    setTimeout(()=>{document.getElementById("Formation").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Formation").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Formation").style.display="none";
-    document.getElementById("Formation").addEventListener("mouseover",()=>{
-        document.getElementById("Formation").style.background = bg_color_over_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Formation").addEventListener("mouseleave",()=>{
-        document.getElementById("Formation").style.background = bg_color_base_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Expériences").style.transform="translateX(-35vw)";
-    setTimeout(()=>{document.getElementById("Expériences").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Expériences").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Expériences").style.display="none";
-    document.getElementById("Expériences").addEventListener("mouseover",()=>{
-        document.getElementById("Expériences").style.background = bg_color_over_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Expériences").addEventListener("mouseleave",()=>{
-        document.getElementById("Expériences").style.background = bg_color_base_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Activité").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Activité").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Activité").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Activité").style.display="none";
-    document.getElementById("Activité").addEventListener("mouseover",()=>{
-        document.getElementById("Activité").style.background = bg_color_over_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Activité").addEventListener("mouseleave",()=>{
-        document.getElementById("Activité").style.background = bg_color_base_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_base_button;
-        });
+    Button_to_move_not_selected("Project","little_box_Project")
+    Button_to_move_not_selected("Education","little_box_Education")
+    Button_to_move_not_selected("Work_experience","little_box_Work_experience")
+    Button_to_move_not_selected("Activity","little_box_Activity")
+    Button_to_move_selected("Profile","little_box_Profile")
 }
-//
-function Button_Formation() {
-    document.getElementById("Profil").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Profil").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Profil").style.transform="translateX(0vw)"},1000);;
-    document.getElementById("little_box_Profil").style.display="none";
-    document.getElementById("Profil").addEventListener("mouseover",()=>{
-        document.getElementById("Profil").style.background = bg_color_over_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Profil").addEventListener("mouseleave",()=>{
-        document.getElementById("Profil").style.background = bg_color_base_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_base_button;
-        });
 
-    document.getElementById("Projet").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Projet").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Projet").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Projet").style.display="none";
-    document.getElementById("Projet").addEventListener("mouseover",()=>{
-        document.getElementById("Projet").style.background = bg_color_over_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Projet").addEventListener("mouseleave",()=>{
-        document.getElementById("Projet").style.background = bg_color_base_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_base_button;
-        });
+function Button_Project(){
     
-
-    document.getElementById("Formation").style.transform="translateX(-38vw)";
-    setTimeout(()=>{document.getElementById("Formation").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Formation").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Formation").style.display="inline";
-    
-
-
-    document.getElementById("Expériences").style.transform="translateX(-35vw)";
-    setTimeout(()=>{document.getElementById("Expériences").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Expériences").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Expériences").style.display="none";
-    document.getElementById("Expériences").addEventListener("mouseover",()=>{
-        document.getElementById("Expériences").style.background = bg_color_over_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Expériences").addEventListener("mouseleave",()=>{
-        document.getElementById("Expériences").style.background = bg_color_base_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Activité").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Activité").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Activité").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Activité").style.display="none";
-    document.getElementById("Activité").addEventListener("mouseover",()=>{
-        document.getElementById("Activité").style.background = bg_color_over_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Activité").addEventListener("mouseleave",()=>{
-        document.getElementById("Activité").style.background = bg_color_base_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_base_button;
-        });
+    Button_to_move_not_selected("Profile","little_box_Profile")
+    Button_to_move_not_selected("Education","little_box_Education")
+    Button_to_move_not_selected("Work_experience","little_box_Work_experience")
+    Button_to_move_not_selected("Activity","little_box_Activity")
+    Button_to_move_selected("Project","little_box_Project")
 }
-//
-function Button_Expériences() {
 
-    document.getElementById("Profil").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Profil").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Profil").style.transform="translateX(0vw)"},1000);;
-    document.getElementById("little_box_Profil").style.display="none";
-    document.getElementById("Profil").addEventListener("mouseover",()=>{
-        document.getElementById("Profil").style.background = bg_color_over_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Profil").addEventListener("mouseleave",()=>{
-        document.getElementById("Profil").style.background = bg_color_base_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_base_button;
-        });
-
-    document.getElementById("Projet").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Projet").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Projet").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Projet").style.display="none";
-    document.getElementById("Projet").addEventListener("mouseover",()=>{
-        document.getElementById("Projet").style.background = bg_color_over_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Projet").addEventListener("mouseleave",()=>{
-        document.getElementById("Projet").style.background = bg_color_base_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_base_button;
-        });
+function Button_Education(){
     
-
-    document.getElementById("Formation").style.transform="translateX(-38vw)";
-    setTimeout(()=>{document.getElementById("Formation").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Formation").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Formation").style.display="none";
-    document.getElementById("Formation").addEventListener("mouseover",()=>{
-        document.getElementById("Formation").style.background = bg_color_over_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Formation").addEventListener("mouseleave",()=>{
-        document.getElementById("Formation").style.background = bg_color_base_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Expériences").style.transform="translateX(-35vw)";
-    setTimeout(()=>{document.getElementById("Expériences").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Expériences").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Expériences").style.display="inline";
-    
-
-
-    document.getElementById("Activité").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Activité").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Activité").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Activité").style.display="none";
-    document.getElementById("Activité").addEventListener("mouseover",()=>{
-        document.getElementById("Activité").style.background = bg_color_over_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Activité").addEventListener("mouseleave",()=>{
-        document.getElementById("Activité").style.background = bg_color_base_button;
-        document.getElementById("Activité").style.boxShadow = sb_color_base_button;
-        });
+    Button_to_move_not_selected("Profile","little_box_Profile")
+    Button_to_move_not_selected("Project","little_box_Project")
+    Button_to_move_not_selected("Work_experience","little_box_Work_experience")
+    Button_to_move_not_selected("Activity","little_box_Activity")
+    Button_to_move_selected("Education","little_box_Education")
 }
-//
-function Button_Activité() {
-    document.getElementById("Profil").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Profil").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Profil").style.transform="translateX(0vw)"},1000);;
-    document.getElementById("little_box_Profil").style.display="none";
-    document.getElementById("Profil").addEventListener("mouseover",()=>{
-        document.getElementById("Profil").style.background = bg_color_over_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Profil").addEventListener("mouseleave",()=>{
-        document.getElementById("Profil").style.background = bg_color_base_button;
-        document.getElementById("Profil").style.boxShadow = sb_color_base_button;
-        });
 
-    document.getElementById("Projet").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Projet").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Projet").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Projet").style.display="none";
-    document.getElementById("Projet").addEventListener("mouseover",()=>{
-        document.getElementById("Projet").style.background = bg_color_over_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Projet").addEventListener("mouseleave",()=>{
-        document.getElementById("Projet").style.background = bg_color_base_button;
-        document.getElementById("Projet").style.boxShadow = sb_color_base_button;
-        });
+function Button_Work_experience(){
     
-
-    document.getElementById("Formation").style.transform="translateX(-38vw)";
-    setTimeout(()=>{document.getElementById("Formation").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Formation").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Formation").style.display="none";
-    document.getElementById("Formation").addEventListener("mouseover",()=>{
-        document.getElementById("Formation").style.background = bg_color_over_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Formation").addEventListener("mouseleave",()=>{
-        document.getElementById("Formation").style.background = bg_color_base_button;
-        document.getElementById("Formation").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Expériences").style.transform="translateX(-35vw)";
-    setTimeout(()=>{document.getElementById("Expériences").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Expériences").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Expériences").style.display="none";
-    document.getElementById("Expériences").addEventListener("mouseover",()=>{
-        document.getElementById("Expériences").style.background = bg_color_over_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_over_button;
-        });
-    document.getElementById("Expériences").addEventListener("mouseleave",()=>{
-        document.getElementById("Expériences").style.background = bg_color_base_button;
-        document.getElementById("Expériences").style.boxShadow = sb_color_base_button;
-        });
-
-
-    document.getElementById("Activité").style.transform="translateX(-40vw)";
-    setTimeout(()=>{document.getElementById("Activité").style.margin="10vh 0 0"},1000);
-    setTimeout(()=>{document.getElementById("Activité").style.transform="translateX(0vw)"},1000);
-    document.getElementById("little_box_Activité").style.display="inline";
-    
-    
+    Button_to_move_not_selected("Profile","little_box_Profile")
+    Button_to_move_not_selected("Project","little_box_Project")
+    Button_to_move_not_selected("Education","little_box_Education")
+    Button_to_move_not_selected("Activity","little_box_Activity")
+    Button_to_move_selected("Work_experience","little_box_Work_experience")
 }
-//
+
+function Button_Activity(){
+    
+    Button_to_move_not_selected("Profile","little_box_Profile")
+    Button_to_move_not_selected("Project","little_box_Project")
+    Button_to_move_not_selected("Education","little_box_Education")
+    Button_to_move_not_selected("Work_experience","little_box_Work_experience")
+    Button_to_move_selected("Activity","little_box_Activity")
+}
+
 function Button_Contact_Form(){
-    if (document.getElementById("Form_contact").style.display == "none"){
-        document.getElementById("Form_contact").style.display = "flex";
+    if (document.getElementById("Form_contact").style.display == "flex"){
+        document.getElementById("Form_contact").style.display = "none";
         }
-    else{document.getElementById("Form_contact").style.display = "none";}
+    else{document.getElementById("Form_contact").style.display = "flex";}
 
 }
 
 
 
-function azerty(){
+function Send_Contact_Form(){
     event.preventDefault()
-    alert("Ce bouton sert que de décoration. Rien n'a été envoyé");
+    alert("Ce bouton ne sert que de décoration. Rien n'a été envoyé");
     
 }
