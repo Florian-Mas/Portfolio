@@ -103,9 +103,23 @@ function Button_Contact_Form(){
 }
 
 
-
-function Send_Contact_Form(){
+function Send_Contact_Form() {
     event.preventDefault()
-    alert("Ce bouton ne sert que de décoration. Rien n'a été envoyé");
-    
+    var params = {
+        name: document.getElementById("who").value,
+        message: document.getElementById("question").value,
+        reply: document.getElementById("come_back").value,
+    };
+
+    const serviceID = "service_contactPortfolio";
+    const templateID = "template_e976uzg";
+    emailjs
+    .send(serviceID, templateID, params)
+    .then(() => {
+        document.getElementById("who").value = "";
+        document.getElementById("question").value = "";
+        document.getElementById("come_back").value = "";
+        alert("Le message a bien été envoyé");
+    })
+    .catch(() => alert("Une erreur est survenue, Le message n'a pas été envoyé"));
 }
