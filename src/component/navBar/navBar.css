@@ -1,0 +1,15 @@
+#navBar{
+    font-family: Shit_Pro;
+    text-align: center;
+    font-size: 20px;
+    background-image: url("../image/Flux_Dev_Vibrant_cyberpunk_Twitch_panel_background_featuring_a_3.jpg");
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    
+}
+
+
+
