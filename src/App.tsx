@@ -3,6 +3,7 @@ import Nav_Bar from "./component/navBar/navBar";
 import Pic from "./component/firstPic/Pic";
 import A_Propos from "./component/APropos/APropos";
 import Competences from "./component/Competences/Competences";
+import Formation from "./component/Formation/Formation";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Pic />
       <A_Propos />
       <Competences/>
+      <Formation/>
     </div>
   );
 }

@@ -2,3 +2,7 @@
   font-family: Shit_Pro;
   src: url("./component/fontElement/Shift\ Pro.otf");
 }
+
+body{
+  overflow-x: hidden;
+}

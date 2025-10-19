@@ -9,14 +9,6 @@ import imgPy from "../image/Image_Programming_Language/Python-logo.png";
 import imgReact from "../image/Image_Programming_Language/React-logo.png";
 import imgBootStrap from "../image/Image_Programming_Language/Bootstrap-logo.png";
 
-let elementDescription = {
-  Csharp: "7",
-  CSS: "CSS",
-  HTML: "HTML",
-  JavaScript: "JavaScript",
-  PHP: "PHP",
-  Python: "Python",
-};
 
 function Competences() {
   const programmingLanguage = {
