@@ -57,6 +57,7 @@ function Formation() {
 }
 let curentDTL = 0;
 
+
 function TimeLineEventListener(statut) {
   if (statut === 1) {
     document
@@ -81,7 +82,12 @@ function TimeLineEffect(e) {
 
   e.preventDefault();
   //console.log(e);
+  //console.log("pose time line",timeLineElementPos.left)
+  //console.log("pose window",(window.innerWidth/4))
   let deplacementTimeLine = e.deltaY;
+  //console.log("pose delta",deplacementTimeLine)
+  
+
   if (10 < deplacementTimeLine) {
     if (timeLineElementPos.left > window.innerWidth / 4) {
       curentDTL = curentDTL;
@@ -96,7 +102,7 @@ function TimeLineEffect(e) {
       curentDTL -= 20;
     }
   }
-  timeLineElement.getBoundingClientRect();
+  
   //console.log(curentDTL)
   timeLineElement.style.transform = `translateX(${curentDTL}px)`;
 }
