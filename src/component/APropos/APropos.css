@@ -30,43 +30,77 @@
 }
 
 #A_Propos{
-    padding-bottom: 70vh ;
-    background-color: white;
+    padding-bottom: 40vh ;
+    background-color: #FFF7F7;
+    padding-top: 10vh;
     font-size: 50px;
 }
 
 #APropos{
     font-family: Shit_Pro;
     margin-bottom: 20vh;
+    margin-left: 5%;
     color:#251949;
     text-shadow: 2px 2px 15px #F180BD;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #F180BD;
 }
-
-.aProposflex{
+#AProposElement{
     display: flex;
     flex-wrap: wrap;
-    gap: 3vw;
+    gap: 10vh;
     justify-content: center;
+    min-height: 425px;
+    
+
 }
+
 
 #PhotoProfil{
     max-width: 250px;
-    width: 20%;
-    min-width: 100px;
-    height: auto;
-    position: absolute;
-    margin-left: 2%;
+    object-fit: cover;
+
 }
 
+.centerScreen{
+    display: flex;
+    flex-direction: column; 
+}
+
+.aProposButton{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin-left: -3vw;
+    margin-bottom: 3vh;
+    
+}
 
 .elementText{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width : 100px;
+    min-width: 100%;
+    /* text-align: justify; */
     font-size: 20px;
+}
 
+#elementPresentation{
+    display: flex;
+    flex-direction: column;   
+    background-color: #FFF7F7;
+    color: #251949;
+    border-left: solid;
+    padding: 0 10px;
+
+}
+#elementLanguage{
+    display: flex;
+    flex-direction: column;   
+    background-color: #FFF7F7;
+    color: #251949;
+    border-left: solid;
+    padding: 0 10px;
 }
 
 .isActivate{
@@ -75,13 +109,3 @@
 .isDeactivate{
     display: none;
 }
-/*
-
-fond violet
-contour rose
-
-fond blanc
-bordure noir
-
-
-*/

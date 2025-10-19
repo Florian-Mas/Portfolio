@@ -1,12 +1,89 @@
-#cp{
-    padding-bottom: 1000px;
+#Competences {
+    padding-bottom: 40vh;
     background-color: #251949;
-    color:white;
-    
-    font-family: Shit_Pro;
-    text-shadow: 2px 2px 15px #F180BD;
+    padding-top: 10vh;
     font-size: 50px;
-
+    color: white;
 }
 
-/* #theTitre */
+#cp {
+    font-family: Shit_Pro;
+    margin-bottom: 20vh;
+    margin-left: 5%;
+    text-shadow: 2px 2px 15px #f180bd;
+    font-size: 50px;
+    
+}
+
+#ProgrammingLanguage{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap : 5vw;
+    
+    
+    margin: 0 10%;
+}
+
+#ProgrammingTool{
+   
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap : 5vw;
+    margin: 10% 10%;
+}
+
+.PLPosition{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: end;
+    border-style: solid;
+    border-color: #F180BD;
+    padding : 10px;
+    margin: 1% 0;
+    min-width: 200px;
+    align-content: center;
+}
+
+.overlay{
+    position: absolute;
+    opacity: 1;
+    transition: 1s ease;
+    background-color: #251949;
+    pointer-events: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: #F180BD;
+}
+.overlayNone{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #251949;
+    pointer-events: none;
+    font-size: 1px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: #F180BD;
+}
+
+
+.ProgrammingLanguageName {
+    font-size: 30px;
+    text-align: center;
+}
+.ProgrammingLanguageImg {
+    max-width: 170px;
+    max-height: 130px;
+    object-fit: contain;
+    justify-content: center;
+
+
+}

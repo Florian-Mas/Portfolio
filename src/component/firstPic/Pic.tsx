@@ -5,7 +5,7 @@ function Pic() {
     <>
         <div id="pic"/>
         <div className="BaseText">Florian MASSART</div>
-        <div className="BaseText description">Étudiant en informatique Web/Logiciel/Cybersécurité</div>
+        <div className="BaseText description">Étudiant en informatique Web / Logiciel / Cybersécurité</div>
 
     </>
   );
