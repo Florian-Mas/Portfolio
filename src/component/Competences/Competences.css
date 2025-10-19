@@ -45,6 +45,9 @@
     margin: 1% 0;
     min-width: 200px;
     align-content: center;
+    transition: 1s ease;
+
+
 }
 
 .overlay{

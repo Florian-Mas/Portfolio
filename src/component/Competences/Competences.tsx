@@ -44,9 +44,9 @@ function Competences() {
   const [curentCategory, setCurentCategory] = useState(0);
   const programmingTool = { React: "React", Bootstrap: "Bootstrap" };
   const programmingToolExplain = {
-    React:
+    EReact:
       "Est une library JavaScript afin de faire du JavaScript et du HTML mélangé (cette page est en React)",
-    Bootstrap:
+    EBootstrap:
       "Est un framework permettant de simplifié le css (les boutons sont crée avec Bootstrap)",
   };
 
@@ -124,7 +124,7 @@ function Competences() {
           {Object.entries(programmingToolExplain).map(
             ([key, element], index) => (
               <div
-                id={"E"+key}
+                id={key}
                 className={curentOver === index && curentCategory === 2? "overlay" : "overlayNone"}
               >
                 {element}
@@ -143,10 +143,13 @@ function PositionProgrammingLanguageOn(name) {
   console.log(ElementPagePositionSize.top + window.scrollY);
   let ElementText = document.getElementById("E" + name);
   console.log(ElementPagePositionSize.left + window.scrollX);
-  ElementText.style.top = ElementPagePositionSize.top + window.scrollY + "px";
-  ElementText.style.left = ElementPagePositionSize.left + window.scrollX + "px";
+  ElementText.style.top = ElementPagePositionSize.top + window.scrollY +(ElementPagePositionSize.height/2)+ "px";
+  ElementText.style.left = ElementPagePositionSize.left + window.scrollX +(ElementPagePositionSize.width/2)+"px";
   ElementText.style.height = ElementPagePositionSize.height + "px";
   ElementText.style.width = ElementPagePositionSize.width + "px";
+  ElementText.style.transform = `translate(-${ElementPagePositionSize.height/2}px,-${ElementPagePositionSize.width/2}px)`
+  ElementGlobal.style.opacity = 0;
+  
 }
 
 function PositionProgrammingLanguageOff(name) {
@@ -155,11 +158,14 @@ function PositionProgrammingLanguageOff(name) {
   console.log(ElementPagePositionSize.top + window.scrollY);
   let ElementText = document.getElementById("E" + name);
   console.log(ElementPagePositionSize.left + window.scrollX);
-  ElementText.style.top = ElementPagePositionSize.top + window.scrollY + "px";
-  ElementText.style.left = ElementPagePositionSize.left + window.scrollX + "px";
+  ElementText.style.top = ElementPagePositionSize.top + window.scrollY +(ElementPagePositionSize.height/2)+ "px";
+  ElementText.style.left = ElementPagePositionSize.left + window.scrollX +(ElementPagePositionSize.width/2)+ "px";
   console.log(ElementPagePositionSize.height, ElementPagePositionSize.width);
   ElementText.style.height = 10 + "px";
   ElementText.style.width = 10 + "px";
+  ElementText.style.transform = `initial`
+  ElementGlobal.style.opacity = 1;
+
 }
 
 export default Competences;
