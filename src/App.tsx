@@ -5,6 +5,7 @@ import A_Propos from "./component/APropos/APropos";
 import Competences from "./component/Competences/Competences";
 import Formation from "./component/Formation/Formation";
 import Experiences from "./component/Experiences/Experiences";
+import Projets from "./component/Projets/Projets";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Competences/>
       <Formation/>
       <Experiences/>
+      <Projets/>
     </div>
   );
 }
