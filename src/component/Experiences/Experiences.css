@@ -1,29 +1,27 @@
-#Formation{
+#Experiences{
     padding-bottom: 40vh ;
-    background-color: #FFF7F7;
+    background-color: #251949;
     padding-top: 10vh;
-    font-size: 50px;
+    color: white;
 }
 
-#FORMATION{
+#EXPERIENCES{
     font-family: Shit_Pro;
     margin-bottom: 20vh;
     margin-left: 5%;
-    color:#251949;
-    text-shadow: 2px 2px 15px #F180BD;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #F180BD;
+    text-shadow: 2px 2px 15px #f180bd;
+    font-size: 50px;
 }
 
-#TimeLineFormationElement{
+#TimeLineExperiencesElement{
     display: flex;
     flex-wrap: nowrap;
     gap : 100px;
     /* background-color: pink; */
-    width: 1000%;    
+    width: 1000%;   
 }
 
-.TimeLineElementFormation{
+.TimeLineElementExperiences{
     width: 500px;
     height: 200px;
     border: solid red;
