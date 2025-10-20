@@ -13,19 +13,24 @@ body{
   left: 0px;
 }
 
-.BaseText {
+.TextFirstPic{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   position: absolute;
-  color: white;
-  font-size: 80px;
   top: 40vh;
-  left: 20vw;
+  left: 15vw;
   font-family: Shit_Pro;
 
 }
 
+.BaseText {
+  color: white;
+  font-size: 80px;
+}
+
 .description {
   font-size: 30px;
-  top: 50vh;
   font-family:Arial;
 }
 
@@ -41,22 +46,18 @@ body{
     left: 5vw;
   }
   .description {
-    font-size: 20px;
-    top: 60vh;
-    
-    
+    font-size: 20px;    
   }
 }
 
-@media only screen and (max-width: 446px){
+@media only screen and (max-width: 533px){
   .BaseText {
-    left: 5vw;
+    left: 3vw;
     font-size: 60px;
 
   }
   .description {
     font-size: 20px;
-    top: 60vh;
     
     
   }  
