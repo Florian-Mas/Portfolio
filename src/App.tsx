@@ -6,6 +6,7 @@ import Competences from "./component/Competences/Competences";
 import Formation from "./component/Formation/Formation";
 import Experiences from "./component/Experiences/Experiences";
 import Projets from "./component/Projets/Projets";
+import Contact from "./component/Contact/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Formation/>
       <Experiences/>
       <Projets/>
+      <Contact/>
     </div>
   );
 }
