@@ -14,3 +14,114 @@
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #F180BD;
 }
+
+
+#TimeLineProjetsElement{
+    font-size: 20px;
+    position: relative;
+}
+
+#TimeLineProjetsElement::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #26c6da;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  /* margin-left: -3px; */
+  z-index: 1;
+}
+
+.ElementOnLeft{
+    background-color: pink;
+    width: 45%;
+    margin: 0 10px;
+}
+
+.ElementOnRight{
+    background-color: pink;
+    width: 45%;
+    margin-left: 55%;
+}
+
+.arrowLeft::before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  border: medium solid purple;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent purple;
+  left : 100%;
+  margin-left: 15px;
+}
+
+.arrowRight::before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  border: medium solid purple;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent purple transparent transparent;
+  margin-left: -15px;
+  
+}
+
+.pointLeft{
+    position:relative;
+    
+}
+.pointRight{
+    position:relative;
+    
+}
+
+.pointLeft::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left:107%;
+    background-color: red;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    
+}
+
+.pointRight::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    background-color: red;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    left:-13%    
+}
+
+
+@media only screen and (min-width: 2000px) {
+    .pointLeft::after{
+        left:109%;
+        margin-left: 6px;
+    }
+
+    .pointRight::after{
+        left:-12%;
+        margin-left: 2px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .pointLeft::after{
+        left:107%;
+        margin-left: 5px;
+    }
+
+    .pointRight::after{
+        left:-13%;
+        margin-left: 3px;
+    }
+}
