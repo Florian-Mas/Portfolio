@@ -25,7 +25,7 @@
     
 }   
 
-/*.TimeLineElementFormation:hover{
+.TimeLineElementFormation:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +38,7 @@
     font-size: 20px;
     border-radius: 60px; 
 
-}*/
+}
 
 .TimeLineElementFormation{
     display: flex;

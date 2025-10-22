@@ -5,7 +5,7 @@ function Experiences() {
   const [curentOver, setCurentOver] = useState(-1);
   const ExperiencesName = {
     AED: <strong>Assistant d’éducation - Collège Le Ruissatel - Marseille</strong>,
-    VCC: <strong>Volontaire Service Civique - Pôle emploi - Marseille</strong>,
+    VCC: <strong>Volontaire Service Civique - Pôle Emploi - Marseille</strong>,
     coursSoutien: <strong>Cours particuliers/soutien scolaire</strong>,
   };
 
