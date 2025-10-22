@@ -11,8 +11,39 @@
     position:fixed;
     width : 100%;
     z-index: 3;
-
     
+}
+
+#listNavBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 5px;
+}
+#listNavBar a {
+    text-decoration: none;
+        margin: 0 10px;
+
+}
+
+#navAP{
+    min-width: 105px;    
+}
+#navCP{
+    min-width: 170px;
+}
+#navFM{
+    min-width: 137px;
+}
+#navEX{
+    min-width: 150px;
+}
+#navPJ{
+    min-width: 110px;
+}
+#navC{
+    min-width: 115px;
 }
 
 
