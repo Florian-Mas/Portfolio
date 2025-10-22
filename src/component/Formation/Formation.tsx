@@ -4,9 +4,9 @@ import "./Formation.css";
 function Formation() {
   const [curentOver, setCurentOver] = useState(-1);
   const FormationName = {
-    Epitech: "Epitech – Marseille",
-    UniversiteLaw: "Université Aix Marseille",
-    LyceeMelizan: "Lycée Mélizan - Marseille",
+    Epitech: <strong>Epitech – Marseille</strong>,
+    UniversiteLaw: <strong>Université Aix Marseille</strong>,
+    LyceeMelizan: <strong>Lycée Mélizan - Marseille</strong>,
   };
 
   const FormationaType = {
@@ -16,9 +16,9 @@ function Formation() {
   };
 
   const FormationaDate = {
-    Epitech: "2025 - 2028",
-    UniversiteLaw: "2020 - 2024",
-    LyceeMelizan: "2020",
+    Epitech: <i>2025 - 2028</i>,
+    UniversiteLaw: <i>2020 - 2024</i>,
+    LyceeMelizan: <i>2020</i>,
   };
 
   return (
