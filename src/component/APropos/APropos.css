@@ -1,6 +1,6 @@
 .btn-theme-whiteBG{
    
-  --bs-btn-bg: #ffffff;            
+  --bs-btn-bg: #fde4e4;            
   --bs-btn-border-color: #120E0E;  
   --bs-btn-color: #000000;  
   --bs-btn-border-size: 2px;     
@@ -31,7 +31,7 @@
 
 #A_Propos{
     padding-bottom: 40vh ;
-    background-color: #FFF7F7;
+    background-color: #F1DADA;
     padding-top: 10vh;
     font-size: 50px;
 }
@@ -88,7 +88,7 @@
 #elementPresentation{
     display: flex;
     flex-direction: column;   
-    background-color: #FFF7F7;
+    background-color: #F1DADA;
     color: #251949;
     border-left: solid;
     padding: 0 10px;
@@ -97,7 +97,7 @@
 #elementLanguage{
     display: flex;
     flex-direction: column;   
-    background-color: #FFF7F7;
+    background-color: #F1DADA;
     color: #251949;
     border-left: solid;
     padding: 0 10px;
