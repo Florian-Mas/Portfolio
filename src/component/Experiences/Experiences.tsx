@@ -4,9 +4,9 @@ import "./Experiences.css";
 function Experiences() {
   const [curentOver, setCurentOver] = useState(-1);
   const ExperiencesName = {
-    AED: "Assistant d’éducation - Collège Le Ruissatel - Marseille",
-    VCC: "Volontaire Service Civique - Pôle emploi - Marseille",
-    coursSoutien: "Cours particuliers/soutien scolaire",
+    AED: <strong>Assistant d’éducation - Collège Le Ruissatel - Marseille</strong>,
+    VCC: <strong>Volontaire Service Civique - Pôle emploi - Marseille</strong>,
+    coursSoutien: <strong>Cours particuliers/soutien scolaire</strong>,
   };
 
   const ExperiencesaType = {
@@ -16,9 +16,9 @@ function Experiences() {
   };
 
   const ExperiencesaDate = {
-    AED: "2024-2025 (1 an)",
-    VCC: "2022 (8mois)",
-    coursSoutien: "2019 (1 an)",
+    AED: <i>2024-2025 (1 an)</i>,
+    VCC: <i>2022 (8mois)</i>,
+    coursSoutien: <i>2019 (1 an)</i>,
   };
 
   return (
