@@ -50,7 +50,7 @@
     flex-wrap: wrap;
     gap: 10vh;
     justify-content: center;
-    min-height: 425px;
+    min-height: 546px;
     
 
 }
@@ -81,7 +81,6 @@
     flex-wrap: wrap;
     width : 100px;
     min-width: 100%;
-    /* text-align: justify; */
     font-size: 20px;
 }
 
@@ -92,20 +91,77 @@
     color: #251949;
     border-left: solid;
     padding: 0 10px;
+    font-size: 16px;
 
 }
 #elementLanguage{
+    display: flex;
+    background-color: #F1DADA;
+    color: #251949;
+    border-left: solid;
+    padding: 0 10px;
+    gap:10%;
+    flex-wrap: nowrap;
+    min-height: 432px;
+    
+
+
+}
+.packLanguage{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25%;
+    
+    
+}
+
+.picFlag{
+    min-width: 190px;
+    
+}
+.typeLanguage{
+    font-size: 16px;
+}
+
+#elementPassion{
     display: flex;
     flex-direction: column;   
     background-color: #F1DADA;
     color: #251949;
     border-left: solid;
     padding: 0 10px;
+    font-size: 16px;
+    min-height: 432px;
+    justify-content: center;
 }
+
+#elementSoft{
+    display: flex;
+    flex-direction: column;   
+    background-color: #F1DADA;
+    color: #251949;
+    border-left: solid;
+    padding: 0 10px;
+    font-size: 16px;
+    min-height: 432px;
+    justify-content: center;
+}
+
 
 .isActivate{
     display: flex;
 }
 .isDeactivate{
     display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #elementLanguage{
+        flex-wrap: wrap;
+    }
+    .picFlag{
+    min-width: 150px;
+}
+  
 }
