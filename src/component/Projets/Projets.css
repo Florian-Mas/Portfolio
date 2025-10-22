@@ -15,6 +15,9 @@
     -webkit-text-stroke-color: #F180BD;
 }
 
+#TheTimeLine{
+    margin: 0 10px;
+}
 
 #TimeLineProjetsElement{
     font-size: 20px;
@@ -25,7 +28,7 @@
   content: "";
   position: absolute;
   width: 3px;
-  background-color: #26c6da;
+  background-color: #251949;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -34,24 +37,27 @@
 }
 
 .ElementOnLeft{
-    background-color: pink;
+    /* background-color: pink; */
     width: 45%;
-    margin: 0 10px;
+    color: #251949;
+    box-shadow: 0 4px 8px 0 rgba(37, 25, 73, 0.3), 0 6px 20px 0 rgba(241, 128, 189, 10);
+
 }
 
 .ElementOnRight{
-    background-color: pink;
+    /* background-color: pink; */
     width: 45%;
     margin-left: 55%;
+    box-shadow: 0 4px 8px 0 rgba(37, 25, 73, 0.3), 0 6px 20px 0 rgba(241, 128, 189, 10);
 }
 
 .arrowLeft::before {
   content: " ";
   position: absolute;
   z-index: 1;
-  border: medium solid purple;
+  border: medium solid #251949;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent purple;
+  border-color: transparent transparent transparent #251949;
   left : 100%;
   margin-left: 15px;
 }
@@ -60,9 +66,9 @@
   content: " ";
   position: absolute;
   z-index: 1;
-  border: medium solid purple;
+  border: medium solid #251949;
   border-width: 10px 10px 10px 0;
-  border-color: transparent purple transparent transparent;
+  border-color: transparent #251949 transparent transparent;
   margin-left: -25px;
   
 }
@@ -80,8 +86,9 @@
     content: "";
     position:absolute;
     top: 0;
-    left:107%;
-    background-color: red;
+    left:110%;
+    margin-left: 6px;
+    background-color: #F180BD;
     z-index: 2;
     width: 20px;
     height: 20px;
@@ -93,35 +100,48 @@
     content: "";
     position:absolute;
     top: 0;
-    background-color: red;
+    background-color: #F180BD;
     z-index: 2;
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    left:-13%    
+    left:-12%;
+    margin-left: 2px;    
 }
 
 
-@media only screen and (min-width: 2000px) {
+.projetsVideo{
+    margin-bottom: 5px;    
+}
+.projetsName{
+    margin-bottom: 5px;
+}
+.projetsDescription{
+    margin-bottom: 10px;    
+
+}
+
+
+@media only screen and (max-width: 1500px) {
     .pointLeft::after{
         left:109%;
         margin-left: 6px;
     }
 
     .pointRight::after{
-        left:-12%;
+        left:-13%;
         margin-left: 2px;
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .pointLeft::after{
-        left:107%;
+        left:108%;
         margin-left: 5px;
     }
 
     .pointRight::after{
         left:-13%;
-        margin-left: 3px;
+        margin-left: 0px;
     }
 }
