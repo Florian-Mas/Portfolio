@@ -77,5 +77,10 @@
         height: 200px;
         margin-left: 2px;
     }
+    .TimeLineElementFormation:hover{
+        width: 370px;
+        height: 200px;
+        margin-left: 2px;
+    }
     
 }
