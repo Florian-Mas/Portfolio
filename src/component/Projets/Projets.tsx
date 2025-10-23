@@ -1,4 +1,13 @@
 import "./Projets.css";
+import JobBoardDemo from "../fichier/vidéo/JobBoard demo.gif";
+import PortfolioFormaCVDemo from "../fichier/vidéo/PortfolioFormaCV demo.gif";
+import HangmanDemo from "../fichier/vidéo/Hangman demo.gif";
+import EbaucheJeu3DDemo from "../fichier/vidéo/Ebauche-jeu-3D demo.gif";
+import JobBoardPNG from "../fichier/image/JobBoard demo.png";
+import PortfolioFormaCVPNG from "../fichier/image/PortfolioFormaCV demo.png";
+import HangmanPNG from "../fichier/image/Hangman demo.png";
+import EbaucheJeu3DPNG from "../fichier/image/Ebauche-jeu-3D demo.png";
+import { useState } from "react";
 
 const projetsName = {
   JobBoard: <strong>JobBoard</strong>,
@@ -8,6 +17,7 @@ const projetsName = {
 };
 
 function Projets() {
+  const [curentOver, setCurentOver] = useState(-1);
   let left = false;
 
   const projetsDescription = {
@@ -21,10 +31,16 @@ function Projets() {
       "Elaboration d’un système de déplacement, de mouvement de caméra, de raycast et de gravité sur Unity. Ce projet personnel utilise uniquement des scripts permettant par la suite d'importer ces scripts sur tout élément permettant de faire une action.",
   };
   const projetsVideo = {
-    JobBoard: "aaaaa",
-    PortfolioFormatCV: "aaaaa",
-    Hangman: "aaaaa",
-    EbaucheJeu3D: "aaaaa",
+    JobBoard: <img src={JobBoardDemo} className="GIFDemo" />,
+    PortfolioFormatCV: <img src={PortfolioFormaCVDemo} className="GIFDemo" />,
+    Hangman: <img src={HangmanDemo} className="GIFDemo" />,
+    EbaucheJeu3D: <img src={EbaucheJeu3DDemo} className="GIFDemo" />,
+  };
+  const projetsPng = {
+    JobBoard: <img src={JobBoardPNG} className="PNGDemo" />,
+    PortfolioFormatCV: <img src={PortfolioFormaCVPNG} className="PNGDemo" />,
+    Hangman: <img src={HangmanPNG} className="PNGDemo" />,
+    EbaucheJeu3D: <img src={EbaucheJeu3DPNG} className="PNGDemo" />,
   };
 
   const projetsLanguage = {
@@ -50,8 +66,18 @@ function Projets() {
                       ? "ElementOnLeft arrowLeft pointLeft"
                       : "ElementOnRight arrowRight pointRight"
                   }
+                  onMouseOver={() => {
+                    setCurentOver(index);
+                  }}
+                  onMouseLeave={() => {
+                    setCurentOver(-1);
+                  }}
                 >
-                  <div className="projetsVideo">{projetsVideo[key]}</div>
+                  <div className="projetsVideo">{curentOver==index ? projetsVideo[key]:projetsPng[key]}
+                  </div>
+                  
+
+                  <div></div>
                   <div className="projetsName">{element}</div>
                   <div className="projetsDescription">
                     {projetsDescription[key]}
@@ -60,14 +86,11 @@ function Projets() {
                 </div>
               );
             })}
-            
           </div>
         </div>
       </div>
     </>
   );
 }
-
-
 
 export default Projets;

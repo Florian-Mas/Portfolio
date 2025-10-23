@@ -115,11 +115,28 @@
 }
 .projetsName{
     margin-bottom: 5px;
+    margin-left: 5px;
 }
 .projetsDescription{
     margin-bottom: 10px;    
+    margin-left: 5px;
 
 }
+
+.projetsLanguage{
+    margin-left: 5px;
+
+}
+
+.GIFDemo{
+    max-width: 100%;
+}
+.PNGDemo{
+    max-width: 100%;
+   
+}
+
+
 
 
 @media only screen and (max-width: 1500px) {
