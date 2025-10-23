@@ -30,20 +30,20 @@ function Projets() {
     EbaucheJeu3D:
       "Elaboration d’un système de déplacement, de mouvement de caméra, de raycast et de gravité sur Unity. Ce projet personnel utilise uniquement des scripts destinés à être importés par la suite sur tout élément permettant de faire une action.",
   };
-  const projetsVideo = {
+  const projetsVideo : Record<string, JSX.Element>= {
     JobBoard: <img src={JobBoardDemo} className="GIFDemo" />,
     PortfolioFormatCV: <img src={PortfolioFormaCVDemo} className="GIFDemo" />,
     Hangman: <img src={HangmanDemo} className="GIFDemo" />,
     EbaucheJeu3D: <img src={EbaucheJeu3DDemo} className="GIFDemo" />,
   };
-  const projetsPng = {
+  const projetsPng : Record<string, JSX.Element>= {
     JobBoard: <img src={JobBoardPNG} className="PNGDemo" />,
     PortfolioFormatCV: <img src={PortfolioFormaCVPNG} className="PNGDemo" />,
     Hangman: <img src={HangmanPNG} className="PNGDemo" />,
     EbaucheJeu3D: <img src={EbaucheJeu3DPNG} className="PNGDemo" />,
   };
 
-  const projetsLanguage = {
+  const projetsLanguage:Record<string, JSX.Element> = {
     JobBoard: <i>HTML / CSS / JavaScript / Bootstrap / PHP / MySQL</i>,
     PortfolioFormatCV: <i>HTML / CSS / JavaScript / Bootstrap</i>,
     Hangman: <i>Python</i>,

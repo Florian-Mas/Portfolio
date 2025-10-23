@@ -31,7 +31,7 @@ function Contact() {
             Mail
           </a>
         </div>
-        <form id="Form_contact">
+        <form id="Form_contact" onSubmit={Send_Contact_Form}>
           <label htmlFor="who">Qui êtes vous :</label>
           <input type="text" id="who" name="who" />
           <label htmlFor="question">Que voulez vous me demander :</label>
@@ -43,7 +43,7 @@ function Contact() {
             value="Envoyer"
             id="send"
             className="btn btn-light"
-            onClick={Send_Contact_Form}
+            
           />
         </form>
         <div id="CVLinkDiv">
@@ -59,12 +59,15 @@ function Contact() {
   );
 }
 
-function Send_Contact_Form() {
+function Send_Contact_Form(event: React.FormEvent<HTMLFormElement>) {
   event.preventDefault();
+ const who = (document.getElementById("who") as HTMLInputElement)?.value;
+  const question = (document.getElementById("question") as HTMLInputElement)?.value;
+  const come_back = (document.getElementById("come_back") as HTMLInputElement)?.value;
   var params = {
-    name: document.getElementById("who").value,
-    message: document.getElementById("question").value,
-    reply: document.getElementById("come_back").value,
+    name: who,
+    message: question,
+    reply: come_back,
   };
 
   const serviceID = "service_contactPortfolio";
@@ -72,9 +75,9 @@ function Send_Contact_Form() {
   emailjs
     .send(serviceID, templateID, params)
     .then(() => {
-      document.getElementById("who").value = "";
-      document.getElementById("question").value = "";
-      document.getElementById("come_back").value = "";
+      (document.getElementById("who") as HTMLInputElement).value = "";
+      (document.getElementById("question") as HTMLInputElement).value = "";
+      (document.getElementById("come_back") as HTMLInputElement).value = "";
       alert("Le message a bien été envoyé");
     })
     .catch(() =>

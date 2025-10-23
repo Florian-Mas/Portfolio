@@ -15,7 +15,7 @@ function Formation() {
     LyceeMelizan: "Bac S - Reçu avec mention",
   };
 
-  const FormationaDate = {
+  const FormationaDate: Record<string, JSX.Element>= {
     Epitech: <i>2025 - 2028</i>,
     UniversiteLaw: <i>2020 - 2024</i>,
     LyceeMelizan: <i>2020</i>,
@@ -71,7 +71,7 @@ function TimeLineEventListener(statut : number) {
   }
 }
 
-function TimeLineEffect(e) {
+function TimeLineEffect(e:WheelEvent) {
   const timeLineElement = document.getElementById("TimeLineFormationElement");
   if (!timeLineElement) return;
   const timeLineElementPos = timeLineElement.getBoundingClientRect();

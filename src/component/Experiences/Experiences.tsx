@@ -15,7 +15,7 @@ function Experiences() {
     coursSoutien: "Aide aux devoirs et cours de soutien.",
   };
 
-  const ExperiencesaDate = {
+  const ExperiencesaDate:Record<string, JSX.Element> = {
     AED: <i>2024-2025 (1 an)</i>,
     VCC: <i>2022 (8mois)</i>,
     coursSoutien: <i>2019 (1 an)</i>,
@@ -71,7 +71,7 @@ function TimeLineEventListener(statut:number) {
   }
 }
 
-function TimeLineEffect(e) {
+function TimeLineEffect(e:WheelEvent) {
   const timeLineElement = document.getElementById("TimeLineExperiencesElement");
   if (!timeLineElement) return;
   const timeLineElementPos = timeLineElement.getBoundingClientRect();
