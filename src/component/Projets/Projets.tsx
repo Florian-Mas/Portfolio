@@ -28,7 +28,7 @@ function Projets() {
     Hangman:
       "Réalisation d’un jeu du pendu en python avec un choix de mot aléatoire sélectionné dans une liste personnalisée tout en enregistrant le meilleur score pour chacun des mots. Il est possible d'ajouter des éléments dans la liste afin que le programme essaie de les faire découvir au joueur.",
     EbaucheJeu3D:
-      "Elaboration d’un système de déplacement, de mouvement de caméra, de raycast et de gravité sur Unity. Ce projet personnel utilise uniquement des scripts permettant par la suite d'importer ces scripts sur tout élément permettant de faire une action.",
+      "Elaboration d’un système de déplacement, de mouvement de caméra, de raycast et de gravité sur Unity. Ce projet personnel utilise uniquement des scripts destinés à être importés par la suite sur tout élément permettant de faire une action.",
   };
   const projetsVideo = {
     JobBoard: <img src={JobBoardDemo} className="GIFDemo" />,

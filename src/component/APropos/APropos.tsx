@@ -71,13 +71,12 @@ function presentation() {
   return (
     <>
       <div id="elementPresentation">
-        {/* <p>👋 Bonjour, moi c’est Florian MASSART</p> */}
         <p>
           Après une licence obtenue en Droit, j’ai choisi de me reconvertir vers
           ce qui me passionne vraiment : l'informatique. Aujourd’hui, j'ai
           intégré l’Epitech en pré-master pour poursuivre ensuite en Master of
           Science Tech, Numérique & Innovation. J'ai un attrait particulier pour
-          le développement et cybersécurité.
+          le développement et la cybersécurité.
         </p>
         <p>
           🔐 J’aime comprendre comment les systèmes fonctionnent — pour mieux
@@ -154,7 +153,7 @@ function soft() {
         
         <div><strong>Adaptabilité :</strong> je m'efforce de m'adapter à mes interlocuteurs ainsi qu'à leurs attentes dans le but de les satisfaire</div>
         <div><strong>Persévérance :</strong> je cherche toujours les solutions me permettant d'atteindre les objectifs fixés</div>
-        <div><strong>Solidarité :</strong> Je suis apprécié pour mon esprit d'équipe et les réussites collectives me tiennent à cœur</div>
+        <div><strong>Solidarité :</strong> je suis apprécié pour mon esprit d'équipe et les réussites collectives me tiennent à cœur</div>
         <div><strong>Raisonnement logique :</strong> je sais structurer ma réflexion pour résoudre efficacement des problèmes complexes et prendre des décisions argumentées pour avoir un résultat optimisé</div>
         <div><strong>Sens de la communication :</strong> je démontre des capacités à adapter mon discours à différents interlocuteurs pour permettre la bonne compréhension, favoriser les échanges entre différents intervenants et contribuer à une collaboration efficace</div>
         <div><strong>Discrétion et maîtrise de soi :</strong> je sais gérer mes émotions et ne réagis jamais de façon impulsive</div>

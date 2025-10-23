@@ -92,6 +92,8 @@
     border-left: solid;
     padding: 0 10px;
     font-size: 16px;
+    min-height: 432px;
+
 
 }
 #elementLanguage{

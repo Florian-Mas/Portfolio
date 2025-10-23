@@ -22,14 +22,14 @@ function Competences() {
 
   const programmingLanguageExplain = {
     ECsharp:
-      "Utilisé lors de projet personnel pour faire des jeu ou des éléments dans des jeux",
-    ECSS: "Utilisé avec le HTML pour avoir l'aspect de la page",
-    EHTML: "Utilisé pour faire des page web comme cette page",
+      "Utilisé lors de projets personnels pour faire des jeux ou des éléments dans des jeux",
+    ECSS: "Utilisé avec le HTML pour configurer l'aspect de la page",
+    EHTML: "Utilisé pour faire des pages web comme cette page",
     EJavaScript:
-      "Utilisé pour faire des effect et des fonction (cette effet est fait grâce au JavaScript)",
-    EPHP: "Utilisé pour faire communiqué ce que l'utilisateur voit et les données. L'utilisateur n'y a pas accès",
+      "Utilisé pour faire des effets et des fonctions (cet effet est fait grâce au JavaScript)",
+    EPHP: "Utilisé pour faire communiquer ce que l'utilisateur voit avec les données, sans y avoir l'accès",
     EPython:
-      "Utilisé pour faire des programme où le language ce rapproche de l'anglais parlé",
+      "Utilisé pour faire des programmes où le language se rapproche de l'anglais parlé",
   };
 
   const [curentOver, setCurentOver] = useState(-1);
@@ -37,9 +37,9 @@ function Competences() {
   const programmingTool = { React: "React", Bootstrap: "Bootstrap" };
   const programmingToolExplain = {
     EReact:
-      "Est une library JavaScript afin de faire du JavaScript et du HTML mélangé (cette page est en React)",
+      "Est une librairie JavaScript afin de faire du JavaScript et du HTML mélangé (cette page est en React)",
     EBootstrap:
-      "Est un framework permettant de simplifié le css (les boutons sont crée avec Bootstrap)",
+      "Est un framework permettant de simplifier le CSS (les boutons sont créés avec Bootstrap)",
   };
 
   const programmingLanguageImg = {
