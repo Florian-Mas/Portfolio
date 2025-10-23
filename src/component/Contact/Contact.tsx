@@ -4,6 +4,7 @@ import LinkedInPic from "../image/Image_Social/LinkedIn-logo.png";
 import mailPic from "../image/Image_Social/mail-logo.png";
 import DLPic from "../image/Image_Social/DL-logo.png";
 import CV from "../fichier/CV Florian MASSART.pdf";
+declare const emailjs: any;
 
 function Contact() {
   return (

@@ -9,7 +9,7 @@ function Experiences() {
     coursSoutien: <strong>Cours particuliers/soutien scolaire</strong>,
   };
 
-  const ExperiencesaType = {
+  const ExperiencesaType: Record<string, string>= {
     AED: "Participation à la vie scolaire, veille au respect du règlement intérieur, collaboration à l’amélioration des conditions d’accueil du public.",
     VCC: "Accompagnement des usagers dans l’utilisation des outils numériques, facilitateur d’inclusion numérique.",
     coursSoutien: "Aide aux devoirs et cours de soutien.",
@@ -58,7 +58,7 @@ function Experiences() {
 let curentDTL = 0;
 
 
-function TimeLineEventListener(statut) {
+function TimeLineEventListener(statut:number) {
   if (statut === 1) {
     document
       .getElementById("TimeLineExperiencesElement")
@@ -73,12 +73,13 @@ function TimeLineEventListener(statut) {
 
 function TimeLineEffect(e) {
   const timeLineElement = document.getElementById("TimeLineExperiencesElement");
+  if (!timeLineElement) return;
   const timeLineElementPos = timeLineElement.getBoundingClientRect();
 
   const timeLineLastElementPos = document
     .getElementById("LastItemOfExperiencesName")
     ?.getBoundingClientRect();
-  
+  if (!timeLineLastElementPos) return;
 
   e.preventDefault();
   //console.log(e);

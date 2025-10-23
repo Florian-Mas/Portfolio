@@ -20,7 +20,7 @@ function Projets() {
   const [curentOver, setCurentOver] = useState(-1);
   let left = false;
 
-  const projetsDescription = {
+  const projetsDescription:Record<string, string> = {
     JobBoard:
       "Travail de groupe pour la création d’un site d’annonces pour l’emploi avec la possibilité de s’inscrire, de se connecter, de postuler et de créer des annonces. L'annonceur peut ensuite voir quelle personne a postulé avec les éléments du formulaire pour le recontacter.",
     PortfolioFormatCV:

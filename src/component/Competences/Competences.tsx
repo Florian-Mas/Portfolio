@@ -42,7 +42,7 @@ function Competences() {
       "Est un framework permettant de simplifier le CSS (les boutons sont créés avec Bootstrap)",
   };
 
-  const programmingLanguageImg = {
+  const programmingLanguageImg :Record<string, string>= {
     Csharp: imgCsharp,
     CSS: imgCSS,
     HTML: imgHTML,
@@ -129,26 +129,32 @@ function Competences() {
   );
 }
 
-function PositionProgrammingLanguageOn(name) {
+function PositionProgrammingLanguageOn(name:string) {
   let ElementGlobal = document.getElementById(name);
+  if (!ElementGlobal) return;
   let ElementPagePositionSize = ElementGlobal.getBoundingClientRect();
+  if (!ElementPagePositionSize) return;
   console.log(ElementPagePositionSize.top + window.scrollY);
   let ElementText = document.getElementById("E" + name);
+  if (!ElementText) return;
   console.log(ElementPagePositionSize.left + window.scrollX);
   ElementText.style.top = ElementPagePositionSize.top + window.scrollY +(ElementPagePositionSize.height/2)+ "px";
   ElementText.style.left = ElementPagePositionSize.left + window.scrollX +(ElementPagePositionSize.width/2)+"px";
   ElementText.style.height = ElementPagePositionSize.height + "px";
   ElementText.style.width = ElementPagePositionSize.width + "px";
   ElementText.style.transform = `translate(-${ElementPagePositionSize.height/2}px,-${ElementPagePositionSize.width/2}px)`
-  ElementGlobal.style.opacity = 0;
+  ElementGlobal.style.opacity = "0";
   
 }
 
-function PositionProgrammingLanguageOff(name) {
+function PositionProgrammingLanguageOff(name:string) {
   let ElementGlobal = document.getElementById(name);
+  if (!ElementGlobal) return;
   let ElementPagePositionSize = ElementGlobal.getBoundingClientRect();
+  if (!ElementPagePositionSize) return;
   console.log(ElementPagePositionSize.top + window.scrollY);
   let ElementText = document.getElementById("E" + name);
+  if (!ElementText) return;
   console.log(ElementPagePositionSize.left + window.scrollX);
   ElementText.style.top = ElementPagePositionSize.top + window.scrollY +(ElementPagePositionSize.height/2)+ "px";
   ElementText.style.left = ElementPagePositionSize.left + window.scrollX +(ElementPagePositionSize.width/2)+ "px";
@@ -156,7 +162,7 @@ function PositionProgrammingLanguageOff(name) {
   ElementText.style.height = 10 + "px";
   ElementText.style.width = 10 + "px";
   ElementText.style.transform = `initial`
-  ElementGlobal.style.opacity = 1;
+  ElementGlobal.style.opacity = "1";
 
 }
 

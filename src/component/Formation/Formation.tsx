@@ -9,7 +9,7 @@ function Formation() {
     LyceeMelizan: <strong>Lycée Mélizan - Marseille</strong>,
   };
 
-  const FormationaType = {
+  const FormationaType:Record<string, string> = {
     Epitech: "Master of Science Tech, Numérique & Innovation",
     UniversiteLaw: "Licence de droit obtenue – Option droit privé",
     LyceeMelizan: "Bac S - Reçu avec mention",
@@ -58,7 +58,7 @@ function Formation() {
 let curentDTL = 0;
 
 
-function TimeLineEventListener(statut) {
+function TimeLineEventListener(statut : number) {
   if (statut === 1) {
     document
       .getElementById("TimeLineFormationElement")
@@ -73,11 +73,14 @@ function TimeLineEventListener(statut) {
 
 function TimeLineEffect(e) {
   const timeLineElement = document.getElementById("TimeLineFormationElement");
+  if (!timeLineElement) return;
   const timeLineElementPos = timeLineElement.getBoundingClientRect();
+  if (!timeLineElementPos) return;
 
   const timeLineLastElementPos = document
     .getElementById("LastItemOfFormationName")
     ?.getBoundingClientRect();
+  if (!timeLineLastElementPos)return;
   
 
   e.preventDefault();
