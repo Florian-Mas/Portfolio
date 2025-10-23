@@ -161,7 +161,40 @@
         flex-wrap: wrap;
     }
     .picFlag{
-    min-width: 150px;
-}
+        min-width: 150px;
+    }
   
+}
+
+@media only screen and (max-width: 500px) {
+    .aProposButton{
+    margin-left: 1vw;
+    }
+    #btnPassions{
+        margin-left: 3vw;
+        padding: 20px;
+    }
+    #btnLangues{
+        padding: 20px;
+    }
+    #btnSoftSkills{
+        padding: 20px;
+    }
+    #elementPresentation{
+        margin-left: 1vw;
+    }
+
+}
+
+@media only screen and (max-width: 322px) {
+
+    #btnLangues{
+        margin-left: 10px;
+    }
+    #btnPassions{
+        margin-left: 10px;
+    }
+    #btnSoftSkills{
+        margin-left: 10px;
+    }
 }

@@ -91,3 +91,20 @@
 
 
 }
+
+@media only screen and (max-width: 500px) {
+    #cp {
+        font-size: 40px;
+    }
+    .ProgrammingLanguageName {
+        font-size: 20px;
+    }
+    .overlay{
+        margin-left: -6px;
+        margin-top: 6px;
+    }
+    #PHP{
+        min-height: 186px;
+    }
+    
+}

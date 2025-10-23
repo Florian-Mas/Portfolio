@@ -7,7 +7,7 @@ import frFlag from "../image/Image_Language/france-flag.gif";
 import ukFlag from "../image/Image_Language/uk-flag.gif";
 
 function A_Propos() {
-  const buttonName = ["Présentation", "Langues", "Passions", "Soft Skills"];
+  const buttonName = {Présentation:"Présentation", Langues:"Langues", Passions:"Passions", SoftSkills:"Soft Skills"};
   const Presentation = presentation();
   const Language = language();
   const Passion = passion();
@@ -30,9 +30,10 @@ function A_Propos() {
           <div className="centerScreen">
             <div className="aProposButton">
               <br />
-              {buttonName.map((element, index) => (
+              {Object.entries(buttonName).map(([key,element], index) => (
                 <button
                   key={element}
+                  id={"btn"+key}
                   type="button"
                   className={
                     selectedButton === index

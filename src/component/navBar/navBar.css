@@ -46,5 +46,39 @@
     min-width: 115px;
 }
 
+@media only screen and (max-width: 500px) {
+    #navBar{
+        width : auto;
+        position:absolute;
+        
+    }
+
+    .navFixed{
+        font-size: 10px; 
+    }
+    #navAP{
+        min-width: 1px;    
+    }
+    #navCP{
+        min-width: 1px;
+    }
+    #navFM{
+        min-width: 1px;
+    }
+    #navEX{
+        min-width: 1px;
+    }
+    #navPJ{
+        min-width: 1px;
+    }
+    #navC{
+        min-width: 1px;
+    }
+    #listNavBar a {
+        margin: 0 20px;
+
+}
+
+}
 
 

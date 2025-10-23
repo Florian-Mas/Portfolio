@@ -62,3 +62,24 @@
     padding-top: 10px;
 
 }
+
+
+@media only screen and (max-width: 500px) {
+    #EXPERIENCES{
+        font-size: 45px;
+    }
+
+    #TimeLineExperiencesElement{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap : 100px;
+        /* width: 10%; */
+        max-width: 10%;  
+    }
+    .TimeLineElementExperiences{
+        width: 370px;
+        height: 300px;
+        margin-left: 2px;
+    }
+    
+}

@@ -86,3 +86,26 @@ input{
     border: 1px solid rgba(241, 218, 218, 1);
     margin: 0 5vw;
 }
+
+@media only screen and (max-width: 500px) {
+    #MySocial{
+        display: flex;
+        justify-content: center;
+        gap: 8%;
+    }
+    a{
+        max-width: 80px;
+    }
+    #Form_contact{
+        font-size: 15px;
+        padding: 10px;
+    }
+    #send{
+        margin-left: 100px ;
+        min-width: 80px;
+    }
+    #buttonCV{
+        margin-left: -50px;
+    }
+
+}

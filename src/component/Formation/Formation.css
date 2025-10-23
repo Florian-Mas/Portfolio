@@ -63,3 +63,19 @@
     padding-top: 10px;
 
 }
+
+@media only screen and (max-width: 500px) {
+    #TimeLineFormationElement{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap : 100px;
+        /* width: 10%; */
+        max-width: 10%;  
+    }
+    .TimeLineElementFormation{
+        width: 370px;
+        height: 200px;
+        margin-left: 2px;
+    }
+    
+}
