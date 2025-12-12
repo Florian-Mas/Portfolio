@@ -7,9 +7,12 @@ import JobBoardPNG from "../fichier/image/JobBoard demo.png";
 import PortfolioFormaCVPNG from "../fichier/image/PortfolioFormaCV demo.png";
 import HangmanPNG from "../fichier/image/Hangman demo.png";
 import EbaucheJeu3DPNG from "../fichier/image/Ebauche-jeu-3D demo.png";
+import VaultbornDemo from "../fichier/vidéo/VaultBorn demo.gif";
+import VaultbornPNG from "../fichier/image/VaultBorn demo.png";
 import { useState } from "react";
 
 const projetsName = {
+  Vaultborn: <strong>Vaultborn</strong>,
   JobBoard: <strong>JobBoard</strong>,
   PortfolioFormatCV: <strong>Portfolio Format CV</strong>,
   Hangman: <strong>Hangman</strong>,
@@ -19,8 +22,10 @@ const projetsName = {
 function Projets() {
   const [curentOver, setCurentOver] = useState(-1);
   let left = false;
-
+  
   const projetsDescription:Record<string, string> = {
+    Vaultborn:
+      "Travail de groupe sur la création d'un jeu video en 2D d'un platformer, looter, hero. Chaque ennemi éliminé permet de gagner de l'expérience. Un système d'inventaire permet au joueur de trier les équipements récupérés et de les équiper. Le joueur gagne des points de statistique à chaque niveau qu'il peut assigner comme il le souhaite.",
     JobBoard:
       "Travail de groupe pour la création d’un site d’annonces pour l’emploi avec la possibilité de s’inscrire, de se connecter, de postuler et de créer des annonces. L'annonceur peut ensuite voir quelle personne a postulé avec les éléments du formulaire pour le recontacter.",
     PortfolioFormatCV:
@@ -31,12 +36,14 @@ function Projets() {
       "Elaboration d’un système de déplacement, de mouvement de caméra, de raycast et de gravité sur Unity. Ce projet personnel utilise uniquement des scripts destinés à être importés par la suite sur tout élément permettant de faire une action.",
   };
   const projetsVideo : Record<string, JSX.Element>= {
+    Vaultborn: <img src={VaultbornDemo} className="GIFDemo" />,
     JobBoard: <img src={JobBoardDemo} className="GIFDemo" />,
     PortfolioFormatCV: <img src={PortfolioFormaCVDemo} className="GIFDemo" />,
     Hangman: <img src={HangmanDemo} className="GIFDemo" />,
     EbaucheJeu3D: <img src={EbaucheJeu3DDemo} className="GIFDemo" />,
   };
   const projetsPng : Record<string, JSX.Element>= {
+    Vaultborn: <img src={VaultbornPNG} className="PNGDemo" />,
     JobBoard: <img src={JobBoardPNG} className="PNGDemo" />,
     PortfolioFormatCV: <img src={PortfolioFormaCVPNG} className="PNGDemo" />,
     Hangman: <img src={HangmanPNG} className="PNGDemo" />,
@@ -44,6 +51,7 @@ function Projets() {
   };
 
   const projetsLanguage:Record<string, JSX.Element> = {
+    Vaultborn: <i>Java</i>,
     JobBoard: <i>HTML / CSS / JavaScript / Bootstrap / PHP / MySQL</i>,
     PortfolioFormatCV: <i>HTML / CSS / JavaScript / Bootstrap</i>,
     Hangman: <i>Python</i>,

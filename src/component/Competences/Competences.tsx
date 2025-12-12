@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Competences.css";
+import imgJava from "../image/Image_Programming_Language/Java-logo.png";
 import imgCsharp from "../image/Image_Programming_Language/Csharp-logo.png";
 import imgCSS from "../image/Image_Programming_Language/css-logo.png";
 import imgHTML from "../image/Image_Programming_Language/html-logo.png";
@@ -12,6 +13,7 @@ import imgBootStrap from "../image/Image_Programming_Language/Bootstrap-logo.png
 
 function Competences() {
   const programmingLanguage = {
+    Java: "Java",
     Csharp: "C#",
     CSS: "CSS",
     HTML: "HTML",
@@ -21,6 +23,8 @@ function Competences() {
   };
 
   const programmingLanguageExplain = {
+    EJava:
+      "Utilisé pour créer des applications logiciels multiplateformes.",
     ECsharp:
       "Utilisé lors de projets personnels pour faire des jeux ou des éléments dans des jeux",
     ECSS: "Utilisé avec le HTML pour configurer l'aspect de la page",
@@ -43,6 +47,7 @@ function Competences() {
   };
 
   const programmingLanguageImg :Record<string, string>= {
+    Java: imgJava,
     Csharp: imgCsharp,
     CSS: imgCSS,
     HTML: imgHTML,
